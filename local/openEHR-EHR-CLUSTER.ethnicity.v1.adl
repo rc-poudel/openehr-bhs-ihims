@@ -23,14 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7a701619ceea83c0ec2c232dc0efc54a">
+		["MD5-CAM-1.0.1"] = <"1637f753edb0c5dc389760d6e1a24b45">
 		["build_uid"] = <"a8a349d5-707a-3b24-829a-5399d29292ca">
 	>
 
 definition
 	CLUSTER[at0000] occurrences matches {0..1} matches {    -- Ethnicity / Caste
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Ethnicity / Caste
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Code
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -47,7 +47,7 @@ ontology
 					description = <"Capture structured ethnicity information for individuals in Nepal">
 				>
 				["at0001"] = <
-					text = <"Ethnicity / Caste">
+					text = <"Code">
 					description = <"">
 				>
 			>
