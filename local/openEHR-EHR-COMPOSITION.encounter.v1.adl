@@ -452,7 +452,7 @@ Niet te gebruiken om een FHIR-bron met eenzelfde naam te representeren - dan is 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6AFDF4A34EB96917079AC64DB5F65463">
+		["MD5-CAM-1.0.1"] = <"30c3b58f11e4bd1ce629ed3047a03c35">
 		["build_uid"] = <"c280ed11-7fda-41c1-9389-ceacb5860808">
 		["revision"] = <"1.0.11">
 	>
@@ -475,8 +475,24 @@ definition
 								include
 									archetype_id/value matches {/.*/}
 							}
+							ELEMENT[at0006] occurrences matches {0..1} matches {    -- Encounter Status
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0007] occurrences matches {0..1} matches {    -- Service Type
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
 						}
 					}
+				}
+				start_time matches {
+					DV_DATE_TIME[at0004] matches {*}    -- DV_DATE_TIME
+				}
+				end_time matches {
+					DV_DATE_TIME[at0005] matches {*}    -- DV_DATE_TIME
 				}
 			}
 		}
@@ -499,6 +515,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["en"] = <
@@ -515,6 +547,22 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0004"] = <
+					text = <"DV_DATE_TIME">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"DV_DATE_TIME">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Encounter Status">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Service Type">
+					description = <"">
 				>
 			>
 		>
@@ -533,6 +581,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["ko"] = <
@@ -549,6 +613,22 @@ ontology
 					text = <"*Extension(en)">
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
 				>
 			>
 		>
@@ -567,6 +647,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["es"] = <
@@ -583,6 +679,22 @@ ontology
 					text = <"Extensión">
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
 				>
 			>
 		>
@@ -601,6 +713,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -617,6 +745,22 @@ ontology
 					text = <"Tilläggsinformation">
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
 				>
 			>
 		>
@@ -635,6 +779,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["fi"] = <
@@ -651,6 +811,22 @@ ontology
 					text = <"Laajennus">
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
 				>
 			>
 		>
@@ -669,6 +845,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["fr"] = <
@@ -685,6 +877,22 @@ ontology
 					text = <"Extension">
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
 				>
 			>
 		>
@@ -703,6 +911,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["pt-pt"] = <
@@ -720,6 +944,22 @@ ontology
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
+				>
 			>
 		>
 		["ca"] = <
@@ -736,6 +976,22 @@ ontology
 					text = <"Extensió">
 					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0004"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Encounter Status (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Service Type (en)">
+					description = <"">
 				>
 			>
 		>
