@@ -452,7 +452,7 @@ Niet te gebruiken om een FHIR-bron met eenzelfde naam te representeren - dan is 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"afd709e919b36031e3070e620abf6104">
+		["MD5-CAM-1.0.1"] = <"37f48caa2948544a8c1bdaed55c49578">
 		["build_uid"] = <"c280ed11-7fda-41c1-9389-ceacb5860808">
 		["revision"] = <"1.0.11">
 	>
@@ -494,9 +494,6 @@ definition
 				end_time matches {
 					DV_DATE_TIME[at0005] matches {*}    -- DV_DATE_TIME
 				}
-				setting matches {
-					DV_CODED_TEXT[at0008] matches {*}    -- DV_CODED_TEXT
-				}
 			}
 		}
 	}
@@ -534,10 +531,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["en"] = <
@@ -569,10 +562,6 @@ ontology
 				>
 				["at0007"] = <
 					text = <"Service Type">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"DV_CODED_TEXT">
 					description = <"">
 				>
 			>
@@ -608,10 +597,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["ko"] = <
@@ -643,10 +628,6 @@ ontology
 				>
 				["at0007"] = <
 					text = <"*Service Type (en)">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
 				>
 			>
@@ -682,10 +663,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["es"] = <
@@ -717,10 +694,6 @@ ontology
 				>
 				["at0007"] = <
 					text = <"*Service Type (en)">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
 				>
 			>
@@ -756,10 +729,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["sv"] = <
@@ -791,10 +760,6 @@ ontology
 				>
 				["at0007"] = <
 					text = <"*Service Type (en)">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
 				>
 			>
@@ -830,10 +795,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["fi"] = <
@@ -865,10 +826,6 @@ ontology
 				>
 				["at0007"] = <
 					text = <"*Service Type (en)">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
 				>
 			>
@@ -904,10 +861,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["fr"] = <
@@ -939,10 +892,6 @@ ontology
 				>
 				["at0007"] = <
 					text = <"*Service Type (en)">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
 				>
 			>
@@ -978,10 +927,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["pt-pt"] = <
@@ -1015,10 +960,6 @@ ontology
 					text = <"*Service Type (en)">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
-					description = <"">
-				>
 			>
 		>
 		["ca"] = <
@@ -1050,10 +991,6 @@ ontology
 				>
 				["at0007"] = <
 					text = <"*Service Type (en)">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"*DV_CODED_TEXT (en)">
 					description = <"">
 				>
 			>
